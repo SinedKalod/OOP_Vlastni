@@ -61,23 +61,20 @@ namespace OOP_Vlastni
                 jmenoMajitele = vysledek;
             }
         }
-        public string NazevKnihovny
+        public string GetNazevKnihovny()
         {
-            get
-            {
                 return nazevKnihovny;
-            }
-            set
-            {
-                nazevKnihovny = value;
-            }
         }
-        public Knihovna(int pocetKnih, int pocetZamestnancu, string jmenoMajitele,string nazevKnihovny)
+        public void SetNazevKnihovny(string nazev)
+            {
+                this.nazevKnihovny = nazev;
+            }
+            public Knihovna(int pocetKnih, int pocetZamestnancu, string jmenoMajitele,string nazevKnihovny)
         {
             PocetKnih = pocetKnih;
             PocetZamestnancu = pocetZamestnancu;
             JmenoMajitele = jmenoMajitele;
-            NazevKnihovny = nazevKnihovny;
+            this.nazevKnihovny = nazevKnihovny;
         }
         public override string ToString()
         {
