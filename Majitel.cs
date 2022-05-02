@@ -15,11 +15,11 @@ namespace OOP_Vlastni
             this.mesicniZisk = mesicniZisk;
             this.pohlavi = pohlavi;
         }
-        public double GetVydelek()
+        public double GetZisk()
         {
             return mesicniZisk;
         }
-        public void SetVydelek(double zisk)
+        public void SetZisk(double zisk)
         {
             this.mesicniZisk = zisk;
         }
